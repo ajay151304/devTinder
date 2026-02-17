@@ -29,8 +29,9 @@ const app = express();
 // });
 
 // /abc /ac so b is optional here, abc/abc will also work
+
 app.get("/user/:userId/:name/:password", (req, res) => {
-  console.log(req.query);
+  // console.log(req.query);
   console.log(req.params);
   res.send({ firstName: "Ajay", lastName: "Prakash" });
 });
